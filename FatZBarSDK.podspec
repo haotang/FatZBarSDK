@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.requires_arc = false
   s.source_files = 'Headers'
   s.vendored_libraries = 'libzbar.a'
-  s.resources = 'Resources'
+  s.resources = 'Headers', 'Headers/**/*.{h,m}'
   s.library = 'iconv'
   s.frameworks = "AVFoundation", "CoreMedia", "CoreVideo", "QuartzCore"
 end
