@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.author = { 'zbar' => 'http://www.sourceforge.net/projects/zbar/' }
   s.source = { :git => 'https://github.com/haotang/FatZBarSDK.git', :tag => '1.3.1' }
   s.requires_arc = false
-  s.source_files = 'Headers'
+  s.source_files = 'Headers', 'Headers/**/*.{h,m}'
   s.vendored_libraries = 'libzbar.a'
-  s.resources = 'Headers/**/*.{h,m}'
+  s.resources = 'Resources'
   s.library = 'iconv'
   s.frameworks = "AVFoundation", "CoreMedia", "CoreVideo", "QuartzCore"
 end
