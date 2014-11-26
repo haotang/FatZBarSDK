@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.summary = 'The fat zbar sdk include armv7 armv7s arm64 i386 x86_64 architectures.'
   s.homepage = 'https://github.com/haotang/FatZBarSDK'
   s.author = { 'zbar' => 'http://www.sourceforge.net/projects/zbar/' }
-  s.source = { :git => 'https://github.com/haotang/FatZBarSDK.git', :tag => '1.3.1' }
+  s.source = { :git => 'https://github.com/haotang/FatZBarSDK.git', :tag => s.version.to_s }
   s.requires_arc = false
   s.source_files = 'Headers', 'Headers/**/*.{h,m}'
   s.vendored_libraries = 'libzbar.a'
